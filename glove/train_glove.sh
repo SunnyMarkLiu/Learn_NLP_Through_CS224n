@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+make
+
 # 设置语料库的路径
 CORPUS=/data/sunnymarkliu/wikimedia/enwiki/cleaned_corpus/wiki.en.text
 # 根据语料库获取的词汇列表
@@ -21,7 +23,7 @@ VOCAB_MIN_COUNT=5
 # 词向量大小
 VECTOR_SIZE=300
 # 最大迭代次数
-MAX_ITER=15
+MAX_ITER=20
 # 上下文窗口大小
 WINDOW_SIZE=15
 BINARY=2
